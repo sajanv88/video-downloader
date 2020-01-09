@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "NODE_ENV=dev node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prod": "NODE_ENV=production npm run build && node server.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
