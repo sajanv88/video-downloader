@@ -1,5 +1,16 @@
 import Head from "next/head";
 
+const loadGa = () => {
+  if (typeof window === "object") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-NWRDKCHFFP");
+  }
+};
+
 const Header = () => {
   return (
     <>
@@ -39,6 +50,11 @@ const Header = () => {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-NWRDKCHFFP"
+        ></script>
+        {loadGa()}
       </Head>
     </>
   );
