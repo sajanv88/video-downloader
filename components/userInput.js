@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const UserInput = props => {
   const [formFeilds, setFormFeilds] = useState({ value: "" });
+
   const onSubmitHandler = e => {
     e.preventDefault();
     if (formFeilds.value) props.onHandler(formFeilds);
-    console.log(formFeilds);
   };
 
   const onChangeHandler = e => {
@@ -13,6 +13,14 @@ const UserInput = props => {
     formFeilds.value = value;
     setFormFeilds({ ...formFeilds });
   };
+
+  useEffect(() => {
+    console.log(props.reset, " ---");
+    if (props.reset && formFeilds.value) {
+      formFeilds.value = "";
+      setFormFeilds({ ...formFeilds });
+    }
+  }, [!props.reset]);
 
   return (
     <div>

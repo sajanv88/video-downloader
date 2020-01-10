@@ -8,6 +8,8 @@ const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 const fileOutPath = `${__dirname}/videos`;
+require("./clean").run();
+
 app.prepare().then(() => {
   const server = express();
   server.use(bodyParser.json());

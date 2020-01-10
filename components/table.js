@@ -1,9 +1,10 @@
 import { formatBytes } from "../utils/utils";
-const Table = ({ response }) => {
+const Table = ({ response, clear }) => {
   const { name = "", status = "", size = "" } = response;
   const onDownload = e => {
     const url = window.encodeURIComponent(name);
     window.location.href = `/download/${url}`;
+    clear();
   };
   return (
     <>

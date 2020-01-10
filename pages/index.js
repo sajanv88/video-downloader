@@ -10,13 +10,15 @@ const Home = () => {
   const [status, setStatus] = useState({
     isLoading: false,
     response: null, //{ name: "", status: "", download_url: "", size: "" },
-    error: false
+    error: false,
+    reset: false
   });
 
   const onInputHandler = async e => {
     status.isLoading = true;
     status.error = false;
     status.response = null;
+    status.reset = false;
     setStatus({ ...status });
 
     try {
@@ -39,6 +41,12 @@ const Home = () => {
       console.log("error ", e);
     }
   };
+
+  const clear = () => {
+    status.response = null;
+    status.reset = true;
+    setStatus({ ...status });
+  };
   return (
     <div>
       <Header />
@@ -52,6 +60,7 @@ const Home = () => {
             <UserInput
               onHandler={onInputHandler}
               isLoading={status.isLoading}
+              reset={status.reset}
             />
             <div className="mt-5">{status.isLoading && <Loading />}</div>
             <div className="mt-5 self-center">
@@ -63,7 +72,7 @@ const Home = () => {
               )}
             </div>
             <div className="mt-5 w-10/12 self-center">
-              {status.response && <Table {...status} />}
+              {status.response && <Table {...status} clear={clear} />}
             </div>
             <hr className="mb-5 mt-5 self-center w-10/12" />
 
