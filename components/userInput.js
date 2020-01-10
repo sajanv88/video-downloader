@@ -15,7 +15,6 @@ const UserInput = props => {
   };
 
   useEffect(() => {
-    console.log(props.reset, " ---");
     if (props.reset && formFeilds.value) {
       formFeilds.value = "";
       setFormFeilds({ ...formFeilds });
