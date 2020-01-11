@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import { useState } from "react";
+import { validateEmail } from "../utils/utils";
 
 const Contact = () => {
   const [formFeilds, setFormFeilds] = useState({
@@ -10,6 +11,7 @@ const Contact = () => {
   });
   const [success, setSuccess] = useState({ message: "" });
   const [error, setError] = useState({ message: "" });
+  const [emailError, setEmailError] = useState({ error: false });
   const onFormSubmit = async e => {
     success.message = "";
     setSuccess({ ...success });
@@ -49,6 +51,13 @@ const Contact = () => {
   };
   const onChangeHandler = e => {
     const { value, name } = e.target;
+    if (name === "email" && !validateEmail(value)) {
+      emailError.error = true;
+      setEmailError({ ...emailError });
+    } else if (name === "email" && validateEmail(value)) {
+      emailError.error = false;
+      setEmailError({ ...emailError });
+    }
     formFeilds[name] = value;
     setFormFeilds({ ...formFeilds });
   };
@@ -111,6 +120,9 @@ const Contact = () => {
               onChange={onChangeHandler}
             />
           </div>
+          {emailError.error && (
+            <p className="pl-3 text-red-600">Email address is not valid.</p>
+          )}
         </div>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full px-3">

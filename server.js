@@ -22,6 +22,11 @@ const emailCsv = createCsvWriter({
   ]
 });
 
+const validateEmail = email => {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
+
 app.prepare().then(() => {
   const server = express();
   server.set("trust proxy", 1);
@@ -86,6 +91,9 @@ app.prepare().then(() => {
     if (!isValid)
       return res.status(400).json({ message: "All feilds are mandatory!" });
 
+    if (!validateEmail(req.body.email)) {
+      return res.status(400).json({ message: "Email is not valid" });
+    }
     const records = [req.body];
     emailCsv
       .writeRecords(records) // returns a promise
