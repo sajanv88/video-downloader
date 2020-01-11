@@ -20,7 +20,7 @@
 .env*
 *.sh
 /videos/**
-
+/messages/**
 # debug
 npm-debug.log*
 yarn-debug.log*
