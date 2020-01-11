@@ -4,7 +4,7 @@ import Link from "next/link";
 const Terms = () => (
   <Layout>
     <div className="h-screen">
-      <h1 className="font-bold text-3xl">Term Of Service</h1>
+      <h1 className="font-bold text-3xl">Terms Of Service</h1>
       <div className="mt-5">
         <p className="uppercase text-gray-700">
           please read this statement of privacy practices carefully before using

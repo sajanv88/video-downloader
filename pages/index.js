@@ -53,8 +53,9 @@ const Home = () => {
       <div className="h-auto">
         <div className="container mx-auto">
           <div className="flex flex-col pt-10">
-            <h1 className="self-center pb-10 text-2xl w-9/12 md:text-4xl md:text-center">
-              Download videos from YouTube.
+            <h1 className="self-center text-center pb-10 text-2xl w-full md:w-9/12 md:text-4xl">
+              Download videos <br className="md:hidden" /> from YouTube,
+              Facebook.
             </h1>
             <UserInput
               onHandler={onInputHandler}
@@ -76,24 +77,79 @@ const Home = () => {
             <hr className="mb-5 mt-5 self-center w-10/12" />
 
             <div className="mt-3 px-5 lg:px-32">
-              <div className="flex justify-center md:justify-around">
-                <div className="max-w-2xl">
-                  <img src="/youtube-example.png" className="w-10/12" />
+              <h1 className="text-xl font-bold pb-2">
+                How to download video from Youtube
+              </h1>
+              <div className="flex flex-col md:flex-row justify-center md:justify-around">
+                <div className="max-w-2xl w-full">
+                  <img
+                    src="/youtube-example.png"
+                    className="w-full md:w-10/12"
+                  />
                 </div>
                 <div className="mx-w-2xl">
                   <div className="text-left md:w-10/12">
                     <h1 className="text-3xl font-bold pb-3">Instructions</h1>
                     <ul className="list-disc ml-5">
                       <li className="pb-3">
-                        Copy the link from your browser address bar and paste
-                        the link. This will download video from YouTube.
+                        Copy the link from the address bar then paste it in the
+                        input box.
                       </li>
                       <li className="pb-3">
-                        After the download is complete you will see a table "
-                        <strong>ABOVE</strong>" with a download button.
+                        Copy the link from the window then paste it in the input
+                        box.
                       </li>
                       <li className="pb-3">
-                        Just click the button to download your video!!
+                        Press the <strong>"ENTER"</strong> key or click on the
+                        <strong>"START"</strong> button to begin the process.
+                      </li>
+                      <li className="pb-3">
+                        After the process is complete you will see a table
+                        appearing on the screen showing the details of the video
+                        and a <strong>DOWNLOAD</strong> button, click on it
+                        download the video.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className="mb-5 mt-5 self-center w-10/12" />
+
+            <div className="mt-3 px-5 lg:px-32">
+              <h1 className="text-xl font-bold pb-2">
+                How to download video from Facebook
+              </h1>
+              <div className="flex flex-col md:flex-row justify-center md:justify-around">
+                <div className="max-w-2xl w-full">
+                  <img
+                    src="/facebook-example.png"
+                    className="w-full md:w-10/12"
+                  />
+                </div>
+                <div className="mx-w-2xl">
+                  <div className="text-left md:w-10/12">
+                    <h1 className="text-3xl font-bold pt-1 pb-3">
+                      Instructions
+                    </h1>
+                    <ul className="list-disc ml-5">
+                      <li className="pb-3">
+                        Right click on the video and click{" "}
+                        <strong>"Show video url"</strong>.
+                      </li>
+                      <li className="pb-3">
+                        Copy the link from the window then paste it in the input
+                        box.
+                      </li>
+                      <li className="pb-3">
+                        Press the <strong>"ENTER"</strong> key or click on the
+                        <strong>"START"</strong> button to begin the process.
+                      </li>
+                      <li className="pb-3">
+                        After the process is complete you will see a table
+                        appearing on the screen showing the details of the video
+                        and a <strong>DOWNLOAD</strong> button, click on it
+                        download the video.
                       </li>
                     </ul>
                   </div>
@@ -103,23 +159,22 @@ const Home = () => {
             <hr className="mb-5 mt-5 self-center w-10/12" />
 
             <h1 className="font-bold text-center text-4xl">
-              u2dost.com - Video Downloader
+              u2dost.com - Youtube and Facebook <br /> Video Downloader
             </h1>
 
             <div className="flex justify-center mt-5 mb-5">
-              <p className="text-center w-6/12">
-                u2dost.com - YouTube Video Downloader. U2dost allows you to
-                download video from YouTube to Mp4 in HD quality. Using u2dost,
-                You can easily download for free thousands of videos from
-                YouTube.
+              <p className="text-center w-full px-2 md:w-6/12">
+                u2dost.com - YouTube, Facebook Video Downloader. U2dost allows
+                you to download video from YouTube, Facebook to Mp4 in HD
+                quality. Using u2dost, You can easily download for free
+                thousands of videos from YouTube and Facebook.
               </p>
             </div>
             <div className="flex flex-col mt-5 px-5 lg:px-32">
-              <h1 className="text-3xl font-bold">Features:</h1>
+              <h1 className="text-3xl font-bold">Features</h1>
               <ul>
-                <li>Download YouTube videos</li>
-                <li>HD videos in Mp4 format</li>
-                <li>Download facebook videos (coming soon)</li>
+                <li>Download YouTube videos in HD Mp4 format</li>
+                <li>Download facebook videos in HD Mp4 format</li>
                 <li>Download Dailymotion videos (coming soon)</li>
               </ul>
             </div>

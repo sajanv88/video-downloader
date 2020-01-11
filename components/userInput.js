@@ -22,7 +22,7 @@ const UserInput = props => {
   }, [!props.reset]);
 
   return (
-    <div>
+    <div className="px-2">
       <form onSubmit={onSubmitHandler}>
         <div className="flex justify-center">
           <div className="max-w-3xl w-full bg-blue-500 p-2">
