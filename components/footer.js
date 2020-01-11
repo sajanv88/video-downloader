@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FooterNav } from "./nav";
 
 const Footer = () => {
   return (
@@ -8,8 +9,9 @@ const Footer = () => {
           <h1 className="text-2xl">©2020 u2dost.com</h1>
         </div>
         <div className="self-center pt-3 pb-3">
-          <span>All rights reserved | Developed by Sajankumar Vijayan</span>
+          <span>All rights reserved | u2dost.com </span>
         </div>
+        <FooterNav />
       </div>
     </div>
   );

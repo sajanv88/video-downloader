@@ -9,7 +9,7 @@ import Header from "../components/header";
 const Home = () => {
   const [status, setStatus] = useState({
     isLoading: false,
-    response: null, //{ name: "", status: "", download_url: "", size: "" },
+    response: null,
     error: false,
     reset: false
   });
@@ -28,6 +28,7 @@ const Home = () => {
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ url: value })
       }).then(r => r.json());
+      window.dataLayer.push({ event: "Button Click", value });
       if (res.message) {
         throw new Error(res);
       }
@@ -49,8 +50,6 @@ const Home = () => {
   };
   return (
     <div>
-      <Header />
-      <Nav />
       <div className="h-auto">
         <div className="container mx-auto">
           <div className="flex flex-col pt-10">
@@ -103,6 +102,10 @@ const Home = () => {
             </div>
             <hr className="mb-5 mt-5 self-center w-10/12" />
 
+            <h1 className="font-bold text-center text-4xl">
+              u2dost.com - Video Downloader
+            </h1>
+
             <div className="flex justify-center mt-5 mb-5">
               <p className="text-center w-6/12">
                 u2dost.com - YouTube Video Downloader. U2dost allows you to
@@ -112,7 +115,7 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col mt-5 px-5 lg:px-32">
-              <h1 className="text-3xl">Features:</h1>
+              <h1 className="text-3xl font-bold">Features:</h1>
               <ul>
                 <li>Download YouTube videos</li>
                 <li>HD videos in Mp4 format</li>
@@ -125,6 +128,12 @@ const Home = () => {
               <a
                 href="https://paypal.me/u2dost?locale.x=en_US"
                 className="px-5 py-3 bg-orange-500 hover:bg-orange-400 rounded text-white font-bold"
+                onClick={() =>
+                  window.dataLayer.push({
+                    event: "Donate button clicked",
+                    redirectedTo: "paypal"
+                  })
+                }
               >
                 Donate
               </a>
@@ -132,7 +141,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
