@@ -49,11 +49,6 @@ const Header = () => {
 
         <link rel="icon" href="/favicon.ico" />
         <script
-          data-ad-client="ca-pub-9974975889490051"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
-        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-NWRDKCHFFP"
         ></script>
