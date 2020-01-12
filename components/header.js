@@ -53,6 +53,12 @@ const Header = () => {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-NWRDKCHFFP"
         ></script>
+        <script
+          type="text/javascript"
+          src="//onvictinitor.com/apu.php?zoneid=3026298"
+          async
+          data-cfasync="false"
+        ></script>
         {loadGa()}
       </Head>
     </>
