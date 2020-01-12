@@ -26,7 +26,7 @@ const Header = () => {
         </title>
         <meta
           name="description"
-          content="Online download videos from YouTube for FREE to PC, mobile. Supports downloading format: MP4 in HD videos"
+          content="Online download videos from YouTube and Facebook for FREE to PC, mobile. Supports downloading format: MP4 in HD videos"
         />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="robots" content="index, follow"></meta>
@@ -35,17 +35,17 @@ const Header = () => {
           itemProp="description"
           content="Online download videos from YouTube, Facebook for FREE to PC, mobile. Supports downloading format: MP4 in HD videos"
         />
-        <meta itemProp="image" content="//www.u2dost.com/logo.png" />
+        <meta itemProp="image" content="https://u2dost.com/logo.png" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Download Videos from YouTube, Facebook"
+          content="Download Videos from YouTube and Facebook for free"
         />
         <meta
           property="og:description"
           content="Online download videos from YouTube, Facebook for FREE to PC, mobile. Supports downloading format: MP4 in HD videos"
         />
-        <meta property="og:image" content="//www.u2dost.com/logo.png" />
+        <meta property="og:image" content="https://u2dost.com/logo.png" />
 
         <link rel="icon" href="/favicon.ico" />
         <script
