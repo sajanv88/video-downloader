@@ -59,6 +59,11 @@ const Header = () => {
           async
           data-cfasync="false"
         ></script>
+        <script
+          src="https://pushsar.com/pfe/current/tag.min.js?z=3026301"
+          data-cfasync="false"
+          async
+        ></script>
         {loadGa()}
       </Head>
     </>
