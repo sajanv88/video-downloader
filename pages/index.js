@@ -85,6 +85,7 @@ const Home = () => {
                   <img
                     src="/youtube-example.png"
                     className="w-full md:w-10/12"
+                    alt="youtube screenshot to show you how and where to copy the link from the youtube"
                   />
                 </div>
                 <div className="mx-w-2xl">
@@ -125,6 +126,7 @@ const Home = () => {
                   <img
                     src="/facebook-example.png"
                     className="w-full md:w-10/12"
+                    alt="facebook screenshot to show you how and where to copy the link from facebook video"
                   />
                 </div>
                 <div className="mx-w-2xl">

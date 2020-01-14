@@ -26,6 +26,7 @@ const UserInput = props => {
       <form onSubmit={onSubmitHandler}>
         <div className="flex justify-center">
           <div className="max-w-3xl w-full bg-blue-500 p-2">
+            <label htmlFor="input-link" />
             <input
               className="px-2 border-2 border-blue-200 w-full h-16 text-xl"
               placeholder="Paste or type link here..."
@@ -33,6 +34,7 @@ const UserInput = props => {
               onChange={onChangeHandler}
               required
               disabled={props.isLoading}
+              id="input-link"
             />
           </div>
           <div className="bg-blue-500 p-2">
