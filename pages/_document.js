@@ -14,7 +14,7 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta
             name="keywords"
-            content="download, videos, youtube videos, facebook videos, mp4, HD, mobile"
+            content="download, videos, youtube videos, facebook videos, mp4, HD, mobile u2dost"
           />
 
           <meta name="propeller" content="b789806b4d977f8fa0e1c035c7a72307" />
