@@ -77,9 +77,9 @@ const Home = () => {
             <hr className="mb-5 mt-5 self-center w-10/12" />
 
             <div className="mt-3 px-5 lg:px-32">
-              <h1 className="text-xl font-bold pb-2">
+              <h2 className="text-xl font-bold pb-2">
                 How to download video from Youtube
-              </h1>
+              </h2>
               <div className="flex flex-col md:flex-row justify-center md:justify-around">
                 <div className="max-w-2xl w-full">
                   <img
@@ -90,7 +90,7 @@ const Home = () => {
                 </div>
                 <div className="mx-w-2xl">
                   <div className="text-left md:w-10/12">
-                    <h1 className="text-3xl font-bold pb-3">Instructions</h1>
+                    <h3 className="text-3xl font-bold pb-3">Instructions</h3>
                     <ul className="list-disc ml-5">
                       <li className="pb-3">
                         Copy the link from the address bar then paste it in the
@@ -118,9 +118,9 @@ const Home = () => {
             <hr className="mb-5 mt-5 self-center w-10/12" />
 
             <div className="mt-3 px-5 lg:px-32">
-              <h1 className="text-xl font-bold pb-2">
+              <h2 className="text-xl font-bold pb-2">
                 How to download video from Facebook
-              </h1>
+              </h2>
               <div className="flex flex-col md:flex-row justify-center md:justify-around">
                 <div className="max-w-2xl w-full">
                   <img
@@ -131,9 +131,9 @@ const Home = () => {
                 </div>
                 <div className="mx-w-2xl">
                   <div className="text-left md:w-10/12">
-                    <h1 className="text-3xl font-bold pt-1 pb-3">
+                    <h3 className="text-3xl font-bold pt-1 pb-3">
                       Instructions
-                    </h1>
+                    </h3>
                     <ul className="list-disc ml-5">
                       <li className="pb-3">
                         Right click on the video and click{" "}

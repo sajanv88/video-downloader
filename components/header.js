@@ -18,7 +18,7 @@ const Header = () => {
   switch (route) {
     case "/":
       titleString =
-        "Downloades videos from Facebook, YouTube - Download Video from Facebook, YouTube | u2dost.com";
+        "Downloades videos from Facebook, YouTube in Mp4 HD format | u2dost.com";
       break;
     case "/about":
       titleString =
@@ -34,7 +34,7 @@ const Header = () => {
       break;
     default:
       titleString =
-        "Downloades videos from Facebook, YouTube - Download Video from Facebook, YouTube | u2dost.com";
+        "Downloades videos from Facebook, YouTube in Mp4 HD format | u2dost.com";
   }
   return (
     <>

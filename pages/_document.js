@@ -12,6 +12,11 @@ class MyDocument extends Document {
         <Head>
           <meta name="robots" content="index, follow" />
           <meta charSet="UTF-8" />
+          <meta
+            name="keywords"
+            content="download, videos, youtube videos, facebook videos, mp4, HD, mobile"
+          />
+
           <meta name="propeller" content="b789806b4d977f8fa0e1c035c7a72307" />
           <meta
             name="viewport"
@@ -41,6 +46,11 @@ class MyDocument extends Document {
           <meta property="og:image" content="/logo.png" />
 
           <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-NWRDKCHFFP"
@@ -55,10 +65,6 @@ class MyDocument extends Document {
             data-cfasync="false"
             async
           ></script>
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
         </body>
       </Html>
     );
