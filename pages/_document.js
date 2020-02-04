@@ -50,21 +50,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-NWRDKCHFFP"
-          ></script>
-          <script
-            src="//onvictinitor.com/apu.php?zoneid=3026298"
-            async
-            data-cfasync="false"
-          ></script>
-          <script
-            src="https://pushsar.com/pfe/current/tag.min.js?z=3026301"
-            data-cfasync="false"
-            async
-          ></script>
         </body>
       </Html>
     );

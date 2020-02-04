@@ -26,8 +26,6 @@ class Downloader {
       video
         .pipe(fs.createWriteStream(`${fileOutPath}/${info._filename}`))
         .on("finish", () => {
-          console.log("Download finished");
-
           res.status(200).json({
             name: info._filename,
             size: info.size,
@@ -37,7 +35,6 @@ class Downloader {
     });
 
     video.on("error", function(err) {
-      console.log("error 2:", err);
       res.status(500).json({
         message: "Sorry, download failed!"
       });
@@ -58,7 +55,6 @@ class Downloader {
         });
         file.on("finish", () => {
           file.close();
-          console.log("completed");
           const stats = fs.statSync(`${fileOutPath}/${fileName}`);
           res.status(200).json({
             name: fileName,

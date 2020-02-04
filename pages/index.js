@@ -181,20 +181,6 @@ const Home = () => {
               </ul>
             </div>
             <hr className="mb-5 mt-5 self-center w-10/12" />
-            <div className="flex justify-center mb-5">
-              <a
-                href="https://paypal.me/u2dost?locale.x=en_US"
-                className="px-5 py-3 bg-orange-500 hover:bg-orange-400 rounded text-white font-bold"
-                onClick={() =>
-                  window.dataLayer.push({
-                    event: "Donate button clicked",
-                    redirectedTo: "paypal"
-                  })
-                }
-              >
-                Donate
-              </a>
-            </div>
           </div>
         </div>
       </div>

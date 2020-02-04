@@ -1,17 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-const loadGa = () => {
-  if (typeof window === "object") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-NWRDKCHFFP");
-  }
-};
-
 const Header = () => {
   const { route } = useRouter();
   let titleString = "";
@@ -40,7 +29,6 @@ const Header = () => {
     <>
       <Head>
         <title>{titleString}</title>
-        {loadGa()}
       </Head>
     </>
   );
