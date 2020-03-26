@@ -19,7 +19,6 @@
 .DS_Store
 .env*
 *.sh
-/videos/**
 /messages/**
 # debug
 npm-debug.log*
