@@ -35,5 +35,3 @@ export const FooterNav = () => {
     </>
   );
 };
-
-export default Nav;
