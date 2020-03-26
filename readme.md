@@ -14,6 +14,10 @@
 <p align="center">A simple react web application which allows anyone to download videos from Youtube and Facebook. <br> 
 </p>
 
+## Demo
+
+- Demo link [Video-downloader-app](https://u2dost.herokuapp.com/)
+
 ### Installing
 
 How to run this application
@@ -34,6 +38,11 @@ running a production environment
 yarn prod
 ```
 
-## ✍️ Author <a name = "authors"></a>
+## Stay in touch
 
-- [@sajanv88](https://github.com/sajanv88)
+- Author - [Sajankumar Vijayan](https://sajankumarv.com)
+- Twitter - [@sajan58603046](https://twitter.com/sajan58603046)
+
+## License
+
+It is [MIT licensed](LICENSE).
