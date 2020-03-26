@@ -28,7 +28,6 @@ const Home = () => {
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ url: value })
       }).then(r => r.json());
-      window.dataLayer.push({ event: "Button Click", value });
       if (res.message) {
         throw new Error(res);
       }

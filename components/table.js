@@ -4,10 +4,6 @@ const Table = ({ response, clear }) => {
   const onDownload = e => {
     const url = window.encodeURIComponent(name);
     window.location.href = `/download/${url}`;
-    window.dataLayer.push(
-      { event: "Download video", name },
-      { event: "Downloaded video size", size: formatBytes(size) }
-    );
     clear();
   };
   return (
