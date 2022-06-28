@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.0.0",
     "got": "^11.8.5",
-    "next": "9.3.2",
+    "next": "12.1.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "tailwindcss": "^1.1.4",
